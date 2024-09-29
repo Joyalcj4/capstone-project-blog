@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<h1>Blogs For You</h1>
+
+<div id ="posts">
+    <%posts.forEach(post => {%>
+        <div class="post">
+            <h2> <%= post.title %> </h2>
+            <p1> <%= post.content %> </p1>
+        </div>
+   <% }); %>
+
+</div>
+
+<div class="cm">
+    <a href="/compose">
+        <button type="button">Compose</button>
+    </a>
+</div>

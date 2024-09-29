@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <h1>Compose a New Post</h1>
+    <div class="comp">
+    <form action="/compose" method="POST">
+        <div class="edit">
+            <label for="postTitle">Post Title:</label>
+            <input type="text" id="postTitle" class="titlesize" name="postTitle" required>
+        </div>
+        <div class="edit" >
+            <label for="postContent">Post Content:</label>
+            <textarea id="postContent" class="textareasize" name="postContent" required></textarea>
+        </div>
+        <div class="edit">
+            <button type="submit">Publish</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
